@@ -12,7 +12,7 @@
 </script>
 <li>
     <form method="post" use:enhance>
-        <p>{name}</p>
+        <span>{name}</span>
         <div>
             <input type="hidden" name="todo" value={name}>
             <button formaction="?/checkTodo">
@@ -34,5 +34,6 @@
     form {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 </style>
