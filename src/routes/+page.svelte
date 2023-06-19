@@ -1,6 +1,5 @@
 <script>
 	import { enhance } from '$app/forms';
-	import ListItem from './ListItem.svelte';
 	import TodoSection from './TodoSection.svelte';
 
     export let data;
