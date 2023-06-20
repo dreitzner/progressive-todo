@@ -19,8 +19,8 @@
         {/if}
     </h2>
     <ul>
-        {#each Object.entries(items).filter(([_name, item_checked]) => item_checked) as [name]}
-        <ListItem {name} checked />
+        {#each Object.entries(items).filter(([_name, item_checked]) => item_checked === checked) as [name]}
+        <ListItem {name} {checked} />
         {:else}
         <h3>No todos</h3>
         {/each}
